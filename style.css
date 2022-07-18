@@ -1,0 +1,593 @@
+/*
+ * ────────────────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: E S T I L O S   G E N E R A L E S : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────────────────────
+ */
+body {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.position-relative {
+  overflow: hidden !important;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  font-family: "Montserrat", sans-serif !important;
+}
+.tx-primary {
+  color: #b49c73 !important;
+}
+
+.active {
+  color: #b49c73 !important;
+}
+.btn {
+  font-weight: 600 !important;
+}
+.btn-primary {
+  color: black !important;
+  background-color: #b49c73 !important;
+  border-color: #b49c73 !important;
+}
+.btn-outline-primary {
+  border-color: #917d5b !important;
+}
+.rounded-1 {
+  border-radius: 6px !important;
+}
+.btn-outline-primary:hover {
+  color: black !important;
+  background-color: #917d5b !important;
+  border-color: #917d5b !important;
+}
+.btn-primary:hover {
+  color: white !important;
+  background-color: #917d5b !important;
+  border-color: #917d5b !important;
+}
+.btn-number {
+  border-radius: 100% !important;
+}
+
+.nav-link {
+  font-weight: 600 !important;
+}
+a {
+  color: black !important;
+}
+.nav-link:hover {
+  color: #b49c73 !important;
+}
+
+.bg-img {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+  overflow: hidden;
+}
+.bg-img::after {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(56, 52, 60, 0.6);
+  overflow: hidden;
+}
+.bg-dark-light {
+  background-color: #48444c;
+}
+.bg-secundary {
+  background-color: #37373f;
+}
+
+.form-1 {
+  position: absolute;
+  z-index: 1000;
+  background-color: rgba(56, 52, 60, 0.6);
+}
+
+/*
+ * ────────────────────────────────────────────────────────────────── ESTILOS ─────
+ */
+
+/*
+ * ──────────────────────────────────────────────────── I I ──────────
+ *   :::::: H E A D E R : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────
+ */
+.nav-brand {
+  border: 0 !important;
+  font-size: 4rem;
+  font-weight: 600 !important;
+}
+.navbar-toggler-icon {
+  color: #917d5b !important;
+}
+
+.bg-carousel {
+  position: relative;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 81vh;
+  overflow: hidden;
+}
+.bg-carousel::after {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.bg-carousel-2 {
+  z-index: 100;
+}
+.text-carousel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.h1 {
+  font-weight: 800 !important;
+  letter-spacing: 1px;
+}
+
+.btn-top {
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  right: 10px;
+}
+
+/*
+ * ─── KEEN SLIDER 1 CSS ──────────────────────────────────────────────────────────
+ */
+
+.navigation-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot--active {
+  background: #000;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+  fill: "#fff";
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled.arrow--left {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled.arrow--right {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/*
+ * ──────────────────────────────────────────────────────── KEEN SLIDER 1 CSS ─────
+ */
+
+/*
+  * ─────────────────────────────────────────────────────────────────── HEADER ─────
+  */
+
+/*
+ * ────────────────────────────────────────────────── III ──────────
+ *   :::::: A B O U T : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────
+ */
+
+.trans-about {
+  transform: translateX(-25%);
+}
+.circle {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 10px;
+  background: #fff;
+  border: 3px solid #000;
+  color: #000;
+  text-align: center;
+  font: 32px Arial, sans-serif;
+}
+/*
+  * ──────────────────────────────────────────────────────────────────── ABOUT ─────
+  */
+
+/*
+   * ────────────────────────────────────────────────────────── IV ──────────
+   *   :::::: P R A C T I C E S : :  :   :    :     :        :          :
+   * ────────────────────────────────────────────────────────────────────
+   */
+/*
+ * ─── KEEN SLIDER 2 CSS ──────────────────────────────────────────────────────────
+ */
+#my-keen-slider-2 {
+  transform: translateY(-30%) scaleX(0.9);
+}
+.navigation-wrapper-2 {
+  position: relative;
+}
+
+.dots-2 {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot-2 {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot--active-2 {
+  background: #000;
+}
+
+.arrow-2 {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: -40%;
+  bottom: auto;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+  fill: rgb(144, 124, 90);
+}
+
+.arrow--left-2 {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #343a40;
+  border-radius: 5px !important;
+  left: 42%;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--right-2 {
+  display: block;
+  padding: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px !important;
+  background-color: #343a40;
+  left: auto;
+  right: 42%;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled-2.arrow--left-2 {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled-2.arrow--right-2 {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/*
+ * ──────────────────────────────────────────────────────── KEEN SLIDER 2 CSS ─────
+ */
+/*
+*/
+/*
+ * ──────────────────────────────────────────────── V ──────────
+ *   :::::: T E A M : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────
+ */
+
+.team-social {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.5s;
+  z-index: 100;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(56, 52, 60, 0.6);
+}
+.team-social-1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.5s;
+  z-index: 100;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(56, 52, 60, 0.6);
+}
+.team-social:hover {
+  opacity: 1;
+}
+.dots {
+  display: none;
+}
+#my-keen-slider-3 {
+  transform: translateY(-30%) scaleX(0.9);
+}
+.arrow-3 {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: -51%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: scale(1);
+  fill: #fff;
+  cursor: pointer;
+  fill: rgb(144, 124, 90);
+}
+
+.arrow--left-3 {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #343a40;
+  border-radius: 5px !important;
+  left: 45%;
+  right: auto;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--right-3 {
+  display: block;
+  padding: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px !important;
+  background-color: #343a40;
+  left: auto;
+  right: 45%;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled-3.arrow--left-3 {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled-3.arrow--right-3 {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/*
+ * ───────────────────────────────────────────────────────────────────── Team ─────
+/*
+
+
+/*
+ * ──────────────────────────────────────────────────────────────── VI ──────────
+ *   :::::: T E S T I M O N I A L S : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────
+ */
+
+/* ─── Keen Slider ────────────────────────────────────────────────────────────────*/
+
+.testimonial::after {
+  position: absolute;
+  content: "";
+  bottom: -18%;
+  left: 15%;
+  border: 15px solid;
+  border-color: #343a40 transparent transparent transparent;
+  z-index: 9999;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots-4 {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  position: absolute;
+  top: -25%;
+  left: 43%;
+}
+
+.dot-4 {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: #b49c73;
+  border-radius: 50%;
+  margin: 0 7px;
+  padding: 7px;
+  cursor: pointer;
+}
+.dot-4::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  border: 2px solid #b49c73;
+  border-radius: 20px;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot--active-4 {
+  background: #000;
+}
+
+/*
+ ───────────────────────────────────────────────────────────── Testimonials ─────
+*/
+
+/*
+   * ──────────────────────────────────────────────────────────── X ──────────
+   *   :::::: R E S P O N S I V E : :  :   :    :     :        :          :
+   * ──────────────────────────────────────────────────────────────────────
+   */
+@media (max-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: calc(1.4rem + 1.5vw);
+  }
+}
+@media screen and (max-width: 992px) {
+  .trans-about {
+    transform: translateX(0%);
+  }
+
+  .arrow--left-3 {
+    left: 42%;
+    right: auto;
+  }
+
+  .arrow--right-3 {
+    left: auto;
+    right: 42%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #my-keen-slider-3 {
+    transform: translateY(-30%) scaleX(0.9);
+  }
+  .dots-4 {
+    left: 36%;
+  }
+  .bg-slider {
+    min-height: 30vh !important;
+  }
+
+  .arrow--left-3 {
+    left: 39%;
+    right: auto;
+  }
+
+  .arrow--right-3 {
+    left: auto;
+    right: 39%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #my-keen-slider-2 {
+    transform: translateY(-30%) scaleX(0.9);
+  }
+  .arrow-2 {
+    top: -40%;
+    bottom: auto;
+  }
+  .arrow--left-2 {
+    left: 35%;
+    right: auto;
+  }
+
+  .arrow--right-2 {
+    left: auto;
+    right: 35%;
+  }
+  #my-keen-slider-3 {
+    transform: translateY(-20%) scaleX(0.9);
+  }
+  .arrow-3 {
+    top: -35%;
+    bottom: auto;
+  }
+  .arrow--left-3 {
+    left: 35%;
+    right: auto;
+    flex-grow: 1;
+    flex-grow: 1;
+  }
+
+  .arrow--right-3 {
+    left: auto;
+    right: 35%;
+  }
+}
+
+/*
+    * ─────────────────────────────────────────────────────────────── RESPONSIVE ─────
+    */
